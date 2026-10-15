@@ -1,0 +1,8 @@
+{
+  "name": "valtu-example-verify-enclave",
+  "private": true,
+  "type": "module",
+  "scripts": { "start": "node verify.mjs" },
+  "engines": { "node": ">=18.17" },
+  "dependencies": { "@valtu/wallet-kit": "^0.8.0" }
+}
