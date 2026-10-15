@@ -5,7 +5,7 @@ import { randomBytes } from "node:crypto";
 import { verifyAttestation } from "@valtu/wallet-kit";
 
 // The production release's PCR0, from https://valtu.io/docs/security#builds. Pass another as an argument.
-const PCR0 = process.argv[2] ?? "2f05574996f4a721ac86766860287a842f7424c41a1d80795bbbb0226a32d624ca0b64b665b89473eb5eacfefb7196d1";
+const PCR0 = process.argv[2] ?? "3dc42f070f94fc08fda5d8e4beb9251321fbd1d2bf360f0d6c34b33c5c844e7ee712c1e05aa4bcaef920088b51523c30";
 const BASE = process.env.VALTU_BASE_URL ?? "https://valtu.io";
 
 const nonce = randomBytes(32).toString("hex");
